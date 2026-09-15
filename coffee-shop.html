@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brew Haven Coffee</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Georgia, serif; color: #3a2c1e; line-height: 1.6; }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: #3a2c1e;
+      color: #f5efe6;
+      position: sticky;
+      top: 0;
+    }
+    nav h1 { font-size: 1.5rem; }
+    nav ul { list-style: none; display: flex; gap: 25px; }
+    nav a { color: #f5efe6; text-decoration: none; }
+    nav a:hover { color: #c9a66b; }
+
+    /* Hero */
+    .hero {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(rgba(58,44,30,0.6), rgba(58,44,30,0.6)),
+                  url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200') center/cover;
+      color: #f5efe6;
+      padding: 0 20px;
+    }
+    .hero h2 { font-size: 3rem; margin-bottom: 15px; }
+    .hero p { font-size: 1.2rem; margin-bottom: 25px; }
+    .btn {
+      background: #c9a66b;
+      color: #3a2c1e;
+      padding: 12px 30px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .btn:hover { background: #b8935a; }
+
+    /* Sections */
+    section { padding: 60px 40px; max-width: 1000px; margin: 0 auto; }
+    section h2 { text-align: center; font-size: 2rem; margin-bottom: 30px; }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+    }
+    .menu-item {
+      background: #f5efe6;
+      padding: 25px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .menu-item h3 { margin-bottom: 8px; }
+    .price { color: #c9a66b; font-weight: bold; }
+
+    .about { background: #f5efe6; }
+
+    /* Footer */
+    footer {
+      background: #3a2c1e;
+      color: #f5efe6;
+      text-align: center;
+      padding: 30px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>☕ Brew Haven</h1>
+    <ul>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h2>Freshly Brewed Happiness</h2>
+    <p>Handcrafted coffee, cozy vibes, and good company.</p>
+    <a href="#menu" class="btn">View Menu</a>
+  </header>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <h3>Espresso</h3>
+        <p>Bold and rich single shot.</p>
+        <p class="price">$3.00</p>
+      </div>
+      <div class="menu-item">
+        <h3>Cappuccino</h3>
+        <p>Espresso with steamed milk foam.</p>
+        <p class="price">$4.50</p>
+      </div>
+      <div class="menu-item">
+        <h3>Latte</h3>
+        <p>Smooth espresso with milk.</p>
+        <p class="price">$4.75</p>
+      </div>
+      <div class="menu-item">
+        <h3>Cold Brew</h3>
+        <p>Slow-steeped, refreshing chill.</p>
+        <p class="price">$4.25</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p style="text-align:center; max-width:700px; margin:0 auto;">
+      Brew Haven started with a simple idea: great coffee brings people together.
+      We source our beans ethically, roast them locally, and serve every cup with care.
+      Stop by and make yourself at home.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Visit Us</h2>
+    <p style="text-align:center;">
+      123 Coffee Street, Bean Town<br>
+      Open daily 7am – 7pm<br>
+      (555) 123-4567
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Brew Haven Coffee. All rights reserved.</p>
+  </footer>
+</body>
+</html>
